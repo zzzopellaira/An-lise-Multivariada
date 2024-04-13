@@ -1,32 +1,3 @@
-##aula 28-03 Mult var
-
-# brut=c(9893,8776,13572,6455,5129,5432,3807,3423,3708,3294,5433,6287) 
-# liq=c(564,389,1103,743,203,215,385,187,127,297,432,451)
-# pat=c(17689,17359,18597,8745,14397,3467,4679,6754,2275,6754,5589,8972) 
-# dados=cbind(brut,liq,pat)
-
-# #obtendo a matriz de cov 
-# s<-(var(dados))
-# o<-eigen(s)$vectors #matriz de autovetores
-# lambda<-eigen(s)$values #matriz diag de autovalores
-# s1<-lambda[1] * o[,1]%*%t(o[,1]) #lambda1 x e1 x t(e1) primeira parcela da matriz
-# s2<-s1+(lambda[2] * o[,2]%*%t(o[,2])) #A SOMA CONVERGE PARA A MATRIZ SIMILAR
-# s3<-s2+(lambda[3] * o[,3]%*%t(o[,3]))
-# s
-# s2
-# s1
-
-# sum(diag(s1))
-# sum(diag(s2))
-# sum(diag(s3))  #matriz similar
-# sum(diag(s))  #traço da matriz de cov dos dados
-# 
-# det(s)
-# det(s3)
-##base de dados real
-
-library(scatterplot3d)
-View(heptatlo)
 heptatlo <- read.csv("C:/Users/W0KU/Downloads/heptatlo.txt",header=T, sep="")
 
 ##o que fariamos se não tivessemos a coluna de scores e quisessemos saber 
