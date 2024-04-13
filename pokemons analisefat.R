@@ -100,15 +100,7 @@ R
 traco_R<-sum(diag(cor(R)))
 
 perc_exp6fat<-sum(lambda)/traco_R
-
-###com 6 fatores já melhorou bastante o percentual de variab. explicada
-
-####hora de analisar as cargas fatoriais e dar uma interpretação pra elas
-
-L
-####não fica claro quais quais variáveis pertecem a quais fatores para podermos interpretar
-###vamos realizar uma rotação ortogonal no intuito de deixar mais evidente a relação das var com os fatores
+varimax(L)  ###rotação ortogonal para tornar as cargas pequenas menores e as cargas grandes maiores
+###com 6 fatores já melhorou bastante o percentual de variab. explicada porém piora a interpretação das cargas 
 
 
-
-varimax(L)
